@@ -1,133 +1,93 @@
-# 🚀 Let's Have Launch - Space Journey Game
+# 🚀 Let's Have Launch (PTO2025)
 
-An interactive space-themed board game built with React and Vite. Embark on an exciting journey through the solar system, encountering various planets, cosmic events, and challenges along the way!
+> An interactive space-themed board game built with modern React. Embark on a journey through the solar system, managing resources while encountering wormholes and asteroids\!
 
-## 🎮 Game Overview
+## 📖 Project Evolution: From Hackathon to Production
 
-**Let's Have Launch** is a turn-based adventure game where players navigate through a 36-cell game board, exploring different locations in space while managing their budget. Roll the dice, visit exotic planets, encounter asteroids, traverse wormholes, and complete your cosmic journey!
+**PTO2025** is a complete architectural rewrite and enhancement of **[pto2023](https://github.com/Choutw/pto2023)**.
 
-### Features
+The original project was created during a **48-hour Hackathon in 2023**. Due to strict time constraints, the initial version was a rapid prototype. Two years later, this project represents a commitment to technical excellence, transforming the concept into a polished, performant application.
 
-- 🎲 **Dice-Based Movement**: Roll the dice to move across the game board
-- 🌌 **Dynamic Space Theme**: Beautiful nebula background with animated starfield
-- 🪐 **Multiple Locations**: Visit various planets and cosmic locations
-- ⚡ **Special Events**: 
-  - **Asteroids**: Unexpected obstacles that affect your journey
-  - **Wormholes**: Mysterious portals that transport you across the board
-- 💰 **Budget Management**: Keep track of your resources throughout the game
-- 📊 **Journey Statistics**: Track visited locations, asteroid hits, and wormhole entries
-- 🎨 **Modern UI/UX**: Clean, futuristic interface with smooth animations
+### 🔗 Links
 
-## 🛠️ Tech Stack
+- **PTO2025 Demo**: [https://maggie62755.github.io/pto2025](https://maggie62755.github.io/pto2025)
+- **PTO2023 Demo**: [https://choutw.github.io/pto2023/login](https://choutw.github.io/pto2023/login)
+- **PTO2023 Introduction Video**: [Watch on YouTube](https://www.youtube.com/watch?v=SQ_4puAXu7g)
 
-- **React 19** - Modern React with hooks and functional components
-- **Vite** - Fast build tool and dev server
-- **React Router DOM** - Client-side routing
-- **CSS3** - Custom animations and responsive design
-- **Google Fonts** - Orbitron, Exo 2, and Roboto font families
+### 💡 Key Improvements
+
+| Feature | Legacy (PTO2023) | Modern (PTO2025) |
+|:---|:---|:---|
+| **Tech Stack** | Hackathon Prototype | **React 19 + Vite + React Router** |
+| **Architecture** | Basic Implementation | **Modular Components & Custom Hooks** |
+| **Data Handling** | Static/Hardcoded | **Dynamic CSV Parsing (`travel_data.csv`)** |
+| **UX/UI** | Basic Interface | **Responsive Design with Animations** |
+
+-----
+
+## 🎮 Game Mechanics
+
+**Let's Have Launch** is a turn-based strategy game played on a 36-cell board.
+
+  * **Objective**: Reach the final destination (Cell 36) before your budget runs out.
+  * **Dice System**: Physics-based rolling determines your movement speed.
+  * **Dynamic Events**:
+      * 🪐 **Planets**: Learn real facts about Mercury, Venus, Mars, and more (Data sourced from NASA).
+      * 🕳️ **Wormholes**: Instant teleportation to different sectors of the board.
+      * ☄️ **Asteroids**: Obstacles that challenge your resource management.
+  * **Resource Management**: Every move and event impacts your budget. Game Over occurs if funds hit zero.
+
+-----
+
+## 🛠️ Technical Stack
+
+  * **Core**: React 19
+  * **Build Tool**: Vite
+  * **Routing**: React Router DOM
+  * **Data Management**: Custom CSV Parser (Auto-converts `travel_data.csv` to JSON)
+  * **Styling**: CSS3 with Responsive Design
+  * **Fonts**: Orbitron, Exo 2, Roboto
+
+-----
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v18 or higher recommended)
-- npm or yarn package manager
+  * Node.js (v18+ recommended)
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd pto2025
-```
+1.  **Clone the repository**
 
-2. Install dependencies:
-```bash
-npm install
-```
+    ```bash
+    git clone https://github.com/maggie62755/pto2025.git
+    cd pto2025
+    ```
 
-3. Start the development server:
-```bash
-npm run dev
-```
+2.  **Install dependencies**
 
-4. Open your browser and navigate to `http://localhost:5173`
+    ```bash
+    npm install
+    ```
 
-### Build for Production
+3.  **Start the development server**
 
-```bash
-npm run build
-```
+    ```bash
+    npm run dev
+    ```
 
-The built files will be in the `dist/` directory.
+4.  **Build for Production**
 
-## 🎯 How to Play
+    ```bash
+    npm run build
+    ```
+-----
 
-1. **Login**: Enter your player name and starting budget
-2. **Roll the Dice**: Click the dice button to roll and move forward
-3. **Explore Locations**: Land on different cells to discover planets and activities
-4. **Manage Budget**: Keep an eye on your remaining budget
-5. **Special Events**:
-   - Landing on an **Asteroid** may affect your journey
-   - Entering a **Wormhole** will teleport you to another location
-6. **Win Condition**: Reach the final cell (Cell 36) to complete the journey
-7. **Game Over**: The game ends if you run out of budget
+## 🎨 Credits & Acknowledgments
 
-## 🎨 Key Features
+  * **Original Concept**: Created by the [pto2023](https://github.com/Choutw/pto2023) team.
+  * **Data Sources**: Planet facts and imagery courtesy of NASA/JPL.
+  * **Fonts**: Google Fonts (Orbitron, Exo 2).
 
-### Modular Architecture
-- Custom hooks for game logic (`useDiceRoll`)
-- Reusable components for UI elements
-- Centralized constants and utilities
-- Clean separation of concerns
-
-### Responsive Design
-- Adapts to different screen sizes
-- Mobile-friendly interface
-- Smooth animations and transitions
-
-### Game Statistics
-The Game Over modal displays:
-- Final position and remaining budget
-- Number of asteroid hits
-- Number of wormhole entries
-- Complete journey timeline with visited locations
-
-## 🔧 Development
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-### Code Style
-
-This project uses ESLint for code quality. Configuration can be found in `eslint.config.js`.
-
-## 📦 Dependencies
-
-### Production
-- `react` & `react-dom` - Core React library
-- `react-router-dom` - Routing
-- `react-dice-roll` - Dice animation component
-- `react-icons` - Icon library
-- `prop-types` - Runtime type checking
-
-### Development
-- `vite` - Build tool
-- `@vitejs/plugin-react` - Vite React plugin
-- `eslint` - Linting
-
-## 🎨 Design Credits
-
-- **Fonts**: Orbitron, Exo 2, Roboto, Roboto Mono (Google Fonts)
-- **Theme**: Space exploration with futuristic aesthetics
-- **Color Palette**: Deep blues, golds, and cosmic gradients
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-**Enjoy your space adventure! 🚀✨**
+-----
