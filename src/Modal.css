@@ -1,0 +1,126 @@
+/* Modal 通用樣式 */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: modal-fadein 0.2s;
+}
+@keyframes modal-fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.modal-content {
+  background: rgba(30,32,60,0.98);
+  border-radius: 18px;
+  padding: 40px 28px 24px 28px; /* 調整 padding-top 增加上方空間 */
+  max-width: 500px;
+  width: 92vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 8px 32px #000a, 0 0 0 2px #ffd70033;
+  border: 2.5px solid rgba(255, 215, 0, 0.18);
+  position: relative;
+  color: #f8f8f8;
+  animation: modal-zoom 0.3s;
+  font-family: 'Segoe UI', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+@keyframes modal-zoom {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.modal-close {
+  position: absolute;
+  top: 10px; /* 調整 close 按鈕位置 */
+  right: 20px;
+  background: none;
+  border: none;
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: #fff;
+}
+
+/* Modal 內容優化 */
+.modal-title {
+  color: #ffd700;
+  font-family: 'Monoton', cursive;
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: -15px; /* title 往上靠近頂部 */
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 16px #ffd70033;
+  position: relative;
+  z-index: 2;
+}
+
+.modal-title-cell {
+  color: #ffd700;
+  /* font-family: 'Noto Sans', 'Segoe UI', Arial, sans-serif; */
+  font-family: 'Monoton', cursive;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0.6em;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+.modal-intro {
+  color: #ffe066;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.1em;
+  text-align: left;
+}
+.modal-intro strong {
+  color: #fff;
+  font-weight: 700;
+}
+.modal-steps {
+  text-align: left;
+  margin: 1.2em 0 1.5em 1.2em;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2;
+  padding: 0;
+}
+.modal-steps li {
+  margin-bottom: 0.5em;
+}
+.modal-btn-row {
+  text-align: center;
+  margin-top: 1.2em;
+}
+
+/* Custom scrollbar styles */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(30, 32, 60, 0.8);
+  border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(63, 67, 126, 0.98);
+  border-radius: 10px;
+  border: 2px solid rgba(30, 32, 60, 0.8);
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(141, 166, 212, 0.98)
+}
+

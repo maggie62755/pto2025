@@ -1,0 +1,8 @@
+.game-info-card .player-label { 
+  color: #ffd700; 
+}
+
+.game-info-card .budget-label { 
+  color: #ffe066; 
+  margin-top: 12px; 
+}

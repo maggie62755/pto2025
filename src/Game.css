@@ -1,0 +1,195 @@
+/* Main Game Layout */
+.game-root {
+  color: #fff;
+  text-align: center;
+  margin-top: 4vh;
+}
+
+.game-title {
+  text-align: center;
+  font-size: 2.2em;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  font-family: 'Orbitron', 'Exo 2', sans-serif;
+  font-weight: 800;
+}
+
+.game-main-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.game-board-section {
+  flex: 0 0 auto;
+}
+
+.game-board {
+  margin: 0 auto;
+  background: #222a;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #0006;
+  padding: 16px 16px 12px 16px;
+}
+
+.game-side-panel {
+  flex: 0 0 340px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+/* Shared Card Styling */
+.game-info-card {
+  background: #23243aee;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px #0003;
+  padding: 16px 18px 12px 18px;
+  margin-bottom: 0;
+  color: #f3f6fa;
+  font-size: 1.08em;
+  min-width: 0;
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Exo 2', 'Roboto', sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.game-info-card .label {
+  font-size: 1em;
+  color: #7ecfff;
+  font-weight: 700;
+  margin-bottom: 2px;
+  letter-spacing: 0.8px;
+  font-family: 'Exo 2', 'Roboto', sans-serif;
+}
+
+.game-info-card .value {
+  font-size: 1.13em;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-family: 'Orbitron', 'Roboto', sans-serif;
+}
+
+/* Side Panel Layout */
+.side-row-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.side-row-flex .game-info-card {
+  flex: 1 1 0;
+  min-width: 100px;
+  max-width: 220px;
+}
+
+/* Movement Tip Animation */
+.move-tip-anim {
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: linear-gradient(90deg, #ffe066 60%, #ffb347 100%);
+  color: #222;
+  font-size: 1.35em;
+  font-weight: bold;
+  padding: 16px 36px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0006, 0 1px 6px #0003;
+  letter-spacing: 1px;
+  animation: tipFadeInOut 1.8s;
+  pointer-events: none;
+}
+@keyframes tipFadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) scale(0.9); }
+  10% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+  80% { opacity: 1; transform: translateX(-50%) scale(1); }
+  100% { opacity: 0; transform: translateX(-50%) scale(0.95); }
+}
+
+/* Buttons */
+.game-board-buttons {
+  display: flex;
+  gap: 16px;
+  margin: 18px 0 0 0;
+  justify-content: center;
+}
+
+.btn.restart-btn, .btn.back-btn {
+  font-family: 'Exo 2', 'Roboto', sans-serif;
+  font-size: 1.08em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  margin: 0 2px;
+  box-shadow: 0 2px 12px #0003, 0 1px 6px #0002;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.12s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 2px #0002;
+}
+
+.btn.restart-btn {
+  background: linear-gradient(90deg, #7ecfff 60%, #2196f3 100%);
+  color: #fff;
+}
+
+.btn.restart-btn:hover, .btn.restart-btn:focus {
+  background: linear-gradient(90deg, #2196f3 60%, #7ecfff 100%);
+  box-shadow: 0 4px 16px #2196f399, 0 1px 6px #0003;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn.back-btn {
+  background: linear-gradient(90deg, #ffb347 60%, #ff6666 100%);
+  color: #fff;
+}
+
+.btn.back-btn:hover, .btn.back-btn:focus {
+  background: linear-gradient(90deg, #ff6666 60%, #ffb347 100%);
+  box-shadow: 0 4px 16px #ff666699, 0 1px 6px #0003;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn.restart-btn:active, .btn.back-btn:active {
+  filter: brightness(0.95);
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .game-main-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .game-side-panel {
+    width: 100%;
+    max-width: 98vw;
+    flex: 1 1 100%;
+  }
+  .side-row-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

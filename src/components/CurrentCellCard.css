@@ -1,0 +1,127 @@
+.current-cell-card {
+  min-height: 300px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.current-cell-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #0006;
+}
+
+.current-cell-card .cell-label {
+  color: #7ecfff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.05em;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.current-cell-card .cell-name {
+  font-size: 1.3em;
+  color: #ffd700;
+  font-weight: bold;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.cell-activity-preview,
+.cell-location-preview {
+  font-size: 0.88em;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  word-break: break-word;
+  text-align: left;
+}
+
+.activity-label,
+.location-label {
+  color: #4fc3f7;
+  font-weight: 700;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+}
+
+.cell-desc-preview {
+  font-size: 0.82em;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(30, 40, 60, 0.35);
+  border-radius: 6px;
+  word-break: break-word;
+  max-height: 85px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.click-hint {
+  font-size: 0.72em;
+  color: #4fc3f7;
+  text-align: left;
+  margin-top: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+.current-cell-card:hover .click-hint {
+  opacity: 1;
+  color: #7ecfff;
+}
+
+/* Modal Content Styles */
+.cell-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cell-modal-image-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.cell-modal-image {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cell-modal-section {
+  display: flex;
+  flex-direction: column;
+  /* gap: 6px; */
+}
+
+.modal-section-label {
+  font-size: 1em;
+  color: #4fc3f7;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.modal-section-value {
+  font-size: 0.95em;
+  color: #e0e0e0;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.modal-section-value.description-text {
+  white-space: pre-line;
+  background: rgba(30, 40, 60, 0.3);
+  padding: 8px;
+  border-radius: 6px;
+  max-height: 400px;
+  overflow-y: auto;
+}

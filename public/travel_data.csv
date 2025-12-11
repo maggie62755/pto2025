@@ -1,0 +1,60 @@
+﻿num,中文,Activity,Location,Description,Sources Link,Image_path,Special_Effect,Target_Cell
+1,水星,Mercury,Mercury,"Type: Rocky planet
+Size (diameter): 4880 km, or about 38% the size of Earth
+Mass: 3.301 × 10^23 kg, or 1/20th the mass of Earth
+Length of a year (orbital period): 88 days
+Number of moons: 0
+Average distance from the Sun: 57.9 million km
+Temperature: Between -173 and 427 degrees Celsius",,Planet/mercury.png
+2,蟲洞,wormhole,space,Absorbed by wormhole! Fast travel forward,,whole.gif,wormhole,17
+3,在水星看日出,Mercury Sunrise Expedition: Closest to the Sun!,Mercury,"Mercury spins slowly on its axis and completes one rotation every 59 Earth days. But when Mercury is moving fastest in its elliptical orbit around the Sun (and it is closest to the Sun), each rotation is not accompanied by sunrise and sunset like it is on most other planets. The morning Sun appears to rise briefly, set, and rise again from some parts of the planet's surface. The same thing happens in reverse at sunset for other parts of the surface. One Mercury solar day (one full day-night cycle) equals 176 Earth days – just over two years on Mercury.","https://science.nasa.gov/mercury/facts/, https://photojournal.jpl.nasa.gov/catalog/PIA11350",Mercury/PIA11350.jpg
+4,水冰火山口探索，尋找水星有沒有水,Find the Water Ice in the Crater ,Mercury,The Water Ice Data Exploration (WIDE) tool shows that there is a possible water ice in this crater. Let's check it now!,,Mercury/PIA18958.jpeg
+5,探索水星最高的山,Visit Caloris Montes: The highest mountain on the Mercury,Mercury,"Caloris Montes is the tallest peak at Mercury, almost 3 kilometers high.",,Mercury/PIA18958.jpeg
+6,水星上有蜘蛛?!,Spider on the Mercury?!,Mercury,One of the most captivating views acquired during MESSENGER’s first Mercury flyby was of the crater Apollodorus surrounded by the radiating troughs of Pantheon Fossae. The team nicknamed the combined feature as “the spider.”,,Mercury/spider.jpeg
+7,信差號太空船撞擊水星表面,The impact of MESSENGER on the surface of Mercury,Mercury,"On April 30, 2015, 19:26:01.166 UTC, the MESSENGER spacecraft impacted Mercury at 54.4398° north latitude and 210.1205° east longitude at a speed of 3.912 kilometers per second. and created a crater estimated to be 16 meters (52 feet) in diameter.",,Mercury/Mesenger_impact.jpeg
+8,蟲洞,wormhole,space,Absorbed by wormhole! Fast travel forward,,whole.gif,wormhole,22
+9,金星,Venus,Venus,"Type: Rocky planet
+Size (diameter): 12,104 km, or 95% the size of Earth
+Mass: 4.868 × 10^24 kg, or 82% the mass of Earth
+Length of a year (orbital period): 224.7 days
+Number of moons: 0
+Average distance from the Sun: 108,208,000 km
+Temperature: Approximately 460 degrees Celsius",,Planet/venus.png
+10,金星表面熔岩觀賞,Lava Spectacle: Witness the Intense Volcanic Activity on Venus!,Venus,"Venus displays compelling evidence of intense volcanic activity, potentially surpassing Earth in the number of volcanoes. As a result, the surface of Venus boasts extensive lava plains where visitors can witness these spectacular lava flows. However, ensuring a safe viewing experience requires proper observation equipment and protection.",,Venus/lava_on_venus.webp
+11,造訪金星最高的高峰,Visiting Maxwell Montes,Venus,"Maxwell is the highest mountain on Venus, rising almost 11 kilometers (6.8 miles) above mean planetary radius. The western slopes (on the left) are very steep, whereas the eastern slopes descend gradually into Fortuna Tessera. The broad ridges and valleys making up Maxwell and Fortuna suggest that the topography resulted from compression.",,Venus/Maxwell.jpeg
+12,造訪金星的峽谷,Visiting Cleopatra Crater,Venus,"Cleopatra is a double-ring impact basin about 100 kilometers (62 miles) in diameter and 2.5 kilometers (1.5 miles) deep. A steep-walled, winding channel a few kilometers wide breaks through the rough terrain surrounding the crater rim. A large amount of lava originating in Cleopatra flowed through this channel and filled valleys in Fortuna Tessera. Cleopatra is superimposed on the structures of Maxwell Montes and appears to be undeformed, indicating that Cleopatra is relatively young.",https://www.jpl.nasa.gov/images/pia00149-venus-maxwell-montes-and-cleopatra-crater,Venus/Maxwell.jpeg
+13,地球,Earth,Earth,"Type: Rocky planet
+Size (diameter): 12,742 km
+Mass: 5.97 × 10^24 kg
+Length of a year (orbital period): 365.26 days
+Number of moons: One, the Moon
+Average distance from the Sun: 150 million km
+Temperature: Between -89.2 to 56.7 degrees Celsius",,Planet/earth.png
+14,小行星,Asteroid,space,Hit by asteroid! Pushed backward,,asteroid.gif,asteroid,3
+15,國際太空站參訪,Visiting the International Space Station,Earth/ISS,"The International Space Station program is a collaborative effort that brings together international flight crews, multiple launch vehicles, globally distributed launch and flight operations, training, engineering, and development facilities, communications networks, and the international scientific research community. Five partner agencies, including NASA, operate the ISS, with each responsible for the hardware it provides. The ISS has been continuously inhabited since 2000, with over 260 individuals from 21 countries participating in more than 60 Expeditions. It serves as a microgravity laboratory for scientific experiments, technological demonstrations, and international collaboration.",https://www.nasa.gov/reference/international-space-station/,Earth/ISS.png
+16,旅行中,traveling,space,traveling in space,,space.jpeg
+17,成為阿姆斯壯,Become Armstrong: Walk on the Moon to Relive the Experience of Armstrong's Lunar Landing!,Earth/Moon,"Armstrong is probably best known as the commander of NASA’s Apollo 11 mission to the moon, during which he became the first person to set foot on the moon on July 20, 1969. Armstrong amassed a total of eight days and 14 hours in space during two space flights, including two hours and 14 minutes walking on the moon. In March 1966, he commanded the Gemini 8 orbital space flight with David Scott as pilot that accomplished the first successful docking of two vehicles in orbit. That was followed by the famed Apollo 11 lunar landing mission in July 1969.",https://www.nasa.gov/people/neil-a-armstrong/,Earth/Armstrong.webp
+18,低重力體驗,Low Gravity Experience,Earth/Moon,Experience the ability to jump higher and measure a lower body weight on the Moon.,,space.jpeg
+19,小行星,Asteroid,space,Hit by asteroid! Pushed backward,,asteroid.gif,asteroid,5
+20,從月球上觀賞地球,Viewing Earth from the Moon,Earth/Moon,"Observing our planet from various angles, take a close look at Earth's beauty.  Can you find out your own country?",https://www.nasa.gov/image-article/nasa-releases-new-high-resolution-earthrise-image-2/,Earth/earthrise.webp
+21,蟲洞,wormhole,space,Absorbed by wormhole! Fast travel forward,,whole.gif,wormhole,32
+22,旅行中,traveling,space,traveling in space,,space.jpeg
+23,月震體驗,Experience Moonquakes,Earth/Moon,"Astronauts left several Passive Seismic Experiments (PSE) on the lunar surface during the Apollo missions. The seismometers on these devices detected moonquakes, impacts from meteorites, and impacts of man-made origin (also known as artificial impacts). Numerous moonquakes occur during sunset and sunrise when the lunar surface temperature changes rapidly on either side of the day/night terminator line. Many of those moonquakes even occur on mapped fault lines.",,space.jpeg
+24,旅行中,traveling,space,traveling in space,,space.jpeg
+25,蟲洞,wormhole,space,Absorbed by wormhole! Fast travel forward,,whole.gif,wormhole,31
+26,火星,Mars,Mars,"Type: Rocky planet
+Size (diameter): 6791 km, or about half the size of Earth
+Mass: 6.417 × 10^23 kg, or about 10% the mass of Earth
+Length of a year (orbital period): 687 days
+Number of moons: Two, Phobos and Deimos
+Average distance from the Sun: 227,939,200 km
+Temperature: Between -140 and 30 degrees Celsius",,Planet/mars.png
+27,觀察火星車執行任務,Join with Rover,Mars,"The Mars 2020 mission, executed by a rover named “Perseverance,” aims to seek signs of ancient life and collect samples of rock and regolith (broken rock and soil) for possible return to Earth.",https://mars.nasa.gov/mars2020/,Mars/Rover_self.jpg
+28,火衛一特色景觀參訪,Visit Stickney Crater: The Most Prominent Feature on Phobos,Mars/Phobos,"The most prominent feature on Phobos is Stickney Crater, which is named for Chloe Angeline Stickney Hall, mathematician and wife of astronomer Asaph Hall. Asaph Hall discovered both the Red Planet's moons in 1877. Stickney crater is about 6-miles (9.7 kilometers) wide, and takes up about half the moon's surface. NASA Mars Global Surveyor took images of the crater, and it appears to be filled with fine dust, with evidence of boulders sliding down its sloped surface.",https://science.nasa.gov/mars/moons/phobos/,Mars/phobos.png
+29,小行星,Asteroid,space,Hit by asteroid! Pushed backward,,asteroid.gif,asteroid,13
+30,火星地形探索:造訪太陽系中的最深的峽谷,A Massive and Mysterious Canyon,Mars,"Valles Marineris, over 3,000 km long and averaging 8 km deep, extending from Noctis Labyrinthus, the arcuate system of graben to the west, to the chaotic terrain to the east. Many of the channels flowed north into Chryse Basin, which contains the site of the Viking 1 Lander and the future site of the Mars Pathfinder Lander.",https://photojournal.jpl.nasa.gov/catalog/pia00422,Mars/Valles Marineris.jpeg
+31,火星地形探索:造訪太陽系中的最高峰,Conquer Olympus Mons: Explore the Tallest Volcano in the Solar System,Mars,"Olympus Mons is the largest known volcano in the Solar System. It is 27 kilometers high, over 600 kilometers at the base, and is surrounded by a well-defined scarp that is up to 6 km high. Lava flows drape over the scarp in places. Much of the plains surrounding the volcano are covered by the ridged and grooved 'aureole' of Olympus Mons. The origin of the aureole is controversial, but may be related to gravity sliding off of the flanks of an ancestral volcano. The summit caldera (central depression) is almost 3 km deep and 25 km across. It probably formed from recurrent collapse following drainage of magma resulting from flank eruptions.",https://www.jpl.nasa.gov/images/pia00300-olympus-mons,Mars/Olympus_Mons.jpg
+32,在火星上看星星或土星環,Stargazing on Mars: An Experience Unlike Earth's,Mars,"Stargazing in the Solar System beyond Earth to experience something truly unique. Due to Mars and Saturn's closer proximity in comparison to Earth and Saturn, there's a chance to witness the mesmerizing Saturn Rings if Saturn's position aligns with the traveler and the sun correctly. You can also see two moons from Mars, one named Phobos and the other named Deimos. Observe and compare them to Earth's Moon.",,Mars/Saturn.jpg
+33,旅行中,traveling,space,traveling in space,,space.jpeg
+34,在火星上搜集垃圾，為環保更盡一份力,Removing Artificial Objects to Cleanse Mars,Mars,"During the past era of the space race, numerous Mars probes were launched in the pursuit of Mars exploration. Among them, many faced failures, whether due to crashes or retirement. However, these spacecraft were not retrieved, and they now remain on Mars, becoming artificial objects on Mars. Today, we have the opportunity to walk in the footsteps of history, while also taking the initiative to collect and remove them. This not only contributes to a cleaner Martian environment but also opens up the possibility for new beginnings and the potential for future life to thrive on Mars.",Rover's Backshell Seen From the Air – NASA Mars Exploration,Mars/Rovers_Backshell_Seen_From_the_Air.png
+35,小行星,Asteroid,space,Hit by asteroid! Pushed backward,,asteroid.gif,asteroid,1
