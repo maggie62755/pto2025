@@ -15,7 +15,7 @@ function App() {
         <div className="layer"></div>
         <div className="layer"></div>
       </div>
-      <BrowserRouter>
+      <BrowserRouter basename="/pto2025">
         <Routes>
           <Route path="/" element={<LoginForm />} />
           <Route path="/game" element={<Game />} />
