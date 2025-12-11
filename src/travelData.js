@@ -61,7 +61,9 @@ function parseCSV(text) {
  */
 export async function getTravelData() {
   try {
-    const res = await fetch('/travel_data.csv');
+    // 使用 import.meta.env.BASE_URL 來取得正確的 base path
+    const basePath = import.meta.env.BASE_URL || '/';
+    const res = await fetch(`${basePath}travel_data.csv`);
     
     if (!res.ok) {
       throw new Error(`Failed to fetch CSV: ${res.status} ${res.statusText}`);

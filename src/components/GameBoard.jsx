@@ -8,6 +8,9 @@ function getCellNumber(row, col) {
 }
 
 const GameBoard = ({ position, path, hoverCell, setHoverCell, travelData, getCellData }) => {
+  // 使用 import.meta.env.BASE_URL 來取得正確的 base path
+  const basePath = import.meta.env.BASE_URL || '/';
+  
   return (
     <div className="game-board">
       <table className="game-board-table">
@@ -30,7 +33,7 @@ const GameBoard = ({ position, path, hoverCell, setHoverCell, travelData, getCel
                     <div className="cell-content">
                       {cellData && cellData.image ? (
                         <img
-                          src={`/resources/${cellData.image}`}
+                          src={`${basePath}resources/${cellData.image}`}
                           alt={cellData.name}
                           className="cell-img-full"
                           onError={(e) => {
@@ -45,7 +48,7 @@ const GameBoard = ({ position, path, hoverCell, setHoverCell, travelData, getCel
                             <div className="cell-popup-location">{cellData.location}</div>
                           )}
                           <img
-                            src={`/resources/${cellData.image}`}
+                            src={`${basePath}resources/${cellData.image}`}
                             alt={cellData.name}
                             className="cell-img-large"
                             onError={(e) => {
@@ -64,15 +67,6 @@ const GameBoard = ({ position, path, hoverCell, setHoverCell, travelData, getCel
       </table>
     </div>
   );
-};
-
-GameBoard.propTypes = {
-  position: PropTypes.number.isRequired,
-  path: PropTypes.arrayOf(PropTypes.number).isRequired,
-  hoverCell: PropTypes.number,
-  setHoverCell: PropTypes.func.isRequired,
-  travelData: PropTypes.arrayOf(PropTypes.object).isRequired,
-  getCellData: PropTypes.func.isRequired,
 };
 
 GameBoard.propTypes = {

@@ -5,6 +5,8 @@ import './CurrentCellCard.css';
 
 const CurrentCellCard = ({ position, cellInfo, currentCellData }) => {
   const [showModal, setShowModal] = useState(false);
+  // 使用 import.meta.env.BASE_URL 來取得正確的 base path
+  const basePath = import.meta.env.BASE_URL || '/';
 
   const getTruncatedDesc = (text, maxLength = 150) => {
     if (!text || text.length <= maxLength) return text;
@@ -47,7 +49,7 @@ const CurrentCellCard = ({ position, cellInfo, currentCellData }) => {
             {currentCellData.image && (
               <div className="cell-modal-image-wrap">
                 <img
-                  src={`/resources/${currentCellData.image}`}
+                  src={`${basePath}resources/${currentCellData.image}`}
                   alt={currentCellData.name}
                   className="cell-modal-image"
                   onError={(e) => {

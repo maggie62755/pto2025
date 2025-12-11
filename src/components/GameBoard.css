@@ -1,8 +1,8 @@
 .game-board {
   margin: 0 auto;
-  background: #222a;
+  /* background: #222a; */
   border-radius: 16px;
-  box-shadow: 0 2px 16px #0006;
+  /* box-shadow: 0 2px 16px #0006; */
   padding: 16px 16px 12px 16px;
 }
 
@@ -63,7 +63,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
-  background: #fff2;
+  background: #0a0a0b;
   box-shadow: 0 1px 3px #0004;
   display: block;
 }
@@ -123,7 +123,7 @@
   height: 120px;
   object-fit: contain;
   border-radius: 8px;
-  background: #fff2;
+  background: #0a0a0b;
   box-shadow: 0 1px 3px #0004;
 }
 
